@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
-import API_URL from '../config';
+import API_URL from './config';
 
 const emptyForm = {
   intent: '',
