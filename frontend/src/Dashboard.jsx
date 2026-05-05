@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './index.css';
+import API_URL from '../config.js';
 
 const generateSessionId = () => Math.random().toString(36).slice(2, 15);
 const legacyChatStorageKey = 'bankassist_chats';
@@ -100,7 +101,7 @@ function Dashboard() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(`${API_URL}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -181,7 +182,7 @@ function Dashboard() {
   const handleExportData = async () => {
     if (!userId) return alert('Must be logged in to export');
     try {
-      const res = await fetch(`/api/user-history/${userId}`);
+      const res = await fetch(`${API_URL}/api/user-history/${userId}`);
       if (!res.ok) throw new Error('Failed to fetch history');
       const history = await res.json();
 
@@ -215,7 +216,7 @@ function Dashboard() {
       message: 'Are you sure you want to delete all your chats? This action cannot be undone.',
       onConfirm: async () => {
         try {
-          await fetch(`/api/user/chats/${userId}`, { method: 'DELETE' });
+          await fetch(`${API_URL}/api/user/chats/${userId}`, { method: 'DELETE' });
           localStorage.removeItem(chatStorageKey);
           setChats([createChat()]);
           setConfirmModal({ show: false, message: '', onConfirm: null });
@@ -233,7 +234,7 @@ function Dashboard() {
       message: 'Are you sure you want to delete your account? This is irreversible and will remove all your data.',
       onConfirm: async () => {
         try {
-          await fetch(`/api/user/delete/${userId}`, { method: 'DELETE' });
+          await fetch(`${API_URL}/api/user/delete/${userId}`, { method: 'DELETE' });
           handleLogout();
         } catch (e) {
           alert('Failed to delete account');
