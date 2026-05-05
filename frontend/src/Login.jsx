@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './auth.css';
+import API_URL from '../config.js';
 
 function Login({ onLoginSuccess, onGuestAccess, onNavigateRegister }) {
   const [email, setEmail] = useState('');
@@ -21,7 +22,7 @@ function Login({ onLoginSuccess, onGuestAccess, onNavigateRegister }) {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/login', {
+      const res = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: email.trim(), password })
