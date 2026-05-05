@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './auth.css';
-import API_URL from '../config.js';
+import API_URL from './config';
 
 function Register() {
   const [fullName, setFullName] = useState('');
