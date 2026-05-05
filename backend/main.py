@@ -39,8 +39,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/api/admin/login")
-
 chatbot = ChatbotEngine()
 
 # User Authentication
@@ -59,6 +57,10 @@ class LoginRequest(BaseModel):
 class AdminLoginRequest(BaseModel):
     email: str
     password: str
+
+
+
+@app.post("/api/admin/login")
 
 # Registration Endpoint
 
