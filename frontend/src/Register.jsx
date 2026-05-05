@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './auth.css';
+import API_URL from '../config.js';
 
 function Register() {
   const [fullName, setFullName] = useState('');
@@ -35,7 +36,7 @@ function Register() {
     setLoading(true);
 
     try {
-      const registerRes = await fetch('/api/register', {
+      const registerRes = await fetch(`${API_URL}/api/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -52,7 +53,7 @@ function Register() {
         return;
       }
 
-      const loginRes = await fetch('/api/login', {
+      const loginRes = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
