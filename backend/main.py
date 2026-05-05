@@ -121,7 +121,12 @@ def admin_login(request: AdminLoginRequest, db: Session = Depends(get_db)):
     if not admin:
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
 
-    if not verify_password(request.password, admin.password_hash):
+    try:
+        password_valid = verify_password(request.password, admin.password_hash)
+    except ValueError:
+        password_valid = False
+
+    if not password_valid:
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
 
     return {
