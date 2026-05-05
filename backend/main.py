@@ -119,12 +119,14 @@ def admin_login(request: AdminLoginRequest, db: Session = Depends(get_db)):
     admin = db.query(Admin).filter(Admin.email == request.email).first()
 
     if not admin:
+        print("❌ Admin not found")
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
 
-    try:
-        password_valid = verify_password(request.password, admin.password_hash)
-    except ValueError:
-        password_valid = False
+    print("👉 Stored hash:", admin.password_hash)
+
+    password_valid = verify_password(request.password, admin.password_hash)
+
+    print("👉 Password valid:", password_valid)
 
     if not password_valid:
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
