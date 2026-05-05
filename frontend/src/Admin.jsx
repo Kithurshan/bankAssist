@@ -167,7 +167,7 @@ function Admin() {
     }
 
     try {
-      const response = await fetch(`${API_URL}/api/delete-knowledge/${id}`), {
+      const response = await fetch(`${API_URL}/api/delete-knowledge/${id}`, {
         method: 'DELETE',
       });
       const data = await response.json();
@@ -185,7 +185,7 @@ function Admin() {
 
   const reviewTraining = async (id, action) => {
     try {
-      const response = await fetch(`${API_URL}/api/${action}-training/${id}`), {
+      const response = await fetch(`${API_URL}/api/${action}-training/${id}`, {
         method: 'POST',
       });
       const data = await response.json();
@@ -205,7 +205,7 @@ function Admin() {
     if (!window.confirm(`Are you sure you want to bulk ${action}?`)) return;
     setLoading(true);
     try {
-      const res = await fetch(`${API_URL}/api/admin/bulk-${action}`), { method: 'POST' });
+      const res = await fetch(`${API_URL}/api/admin/bulk-${action}`, { method: 'POST' });
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail);
       showMessage(data.message);
@@ -230,7 +230,7 @@ function Admin() {
 
   const removeUnansweredQuestion = async (id) => {
     try {
-      const response = await fetch(`${API_URL}/api/delete-unanswered/${id}`), {
+      const response = await fetch(`${API_URL}/api/delete-unanswered/${id}`, {
         method: 'DELETE',
       });
       const data = await response.json();
@@ -250,7 +250,7 @@ function Admin() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_URL}/api/retrain`), {
+      const response = await fetch(`${API_URL}/api/retrain`, {
         method: 'POST',
       });
       const data = await response.json();
@@ -281,7 +281,7 @@ function Admin() {
     setUploadProgress(20);
 
     try {
-      const res = await fetch(`${API_URL}/api/admin/bulk-upload`), {
+      const res = await fetch(`${API_URL}/api/admin/bulk-upload`, {
         method: 'POST',
         body: formData,
       });
