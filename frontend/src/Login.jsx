@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './auth.css';
 import API_URL from './config';
 
-console.log("API_URL:", API_URL);
-
 function Login({ onLoginSuccess, onGuestAccess, onNavigateRegister }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
