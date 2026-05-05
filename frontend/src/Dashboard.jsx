@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './index.css';
-import API_URL from '../config.js';
+import API_URL from './config';
 
 const generateSessionId = () => Math.random().toString(36).slice(2, 15);
 const legacyChatStorageKey = 'bankassist_chats';
