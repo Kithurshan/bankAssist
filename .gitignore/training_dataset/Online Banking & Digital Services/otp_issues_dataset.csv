@@ -1,0 +1,6 @@
+intent,question,answer
+otp_issues,Why am I not receiving OTP?,"OTP issues may occur due to network delays, incorrect contact details, or temporary service interruptions."
+otp_issues,OTP not received for banking login,"Check mobile signal, registered number, and request OTP again."
+otp_issues,Expired OTP issue,Expired OTPs require requesting a new code.
+otp_issues,Incorrect OTP entered,Ensure accurate entry and request a new OTP if needed.
+otp_issues,How to fix OTP problems?,"Verify account contact details, network status, and consult customer support if issues continue."

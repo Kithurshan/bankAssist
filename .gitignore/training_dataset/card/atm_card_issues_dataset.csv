@@ -1,0 +1,6 @@
+intent,question,answer
+atm_card_issues,ATM card not working,"If your ATM card is not working, check activation status, PIN accuracy, card expiry, or contact customer support."
+atm_card_issues,ATM declined my card,"Declines may occur due to incorrect PIN, insufficient balance, network issues, or blocked cards."
+atm_card_issues,Card stuck in ATM,Contact the bank immediately and avoid leaving the machine unattended.
+atm_card_issues,ATM cash withdrawal failed,Check transaction status and contact your bank if funds were deducted incorrectly.
+atm_card_issues,ATM card damaged,Request a replacement card through your bank.

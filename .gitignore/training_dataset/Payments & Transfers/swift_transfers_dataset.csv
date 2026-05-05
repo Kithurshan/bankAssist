@@ -1,0 +1,6 @@
+intent,question,answer
+swift_transfers,What is SWIFT transfer?,SWIFT is an international banking network used for secure cross-border money transfers between financial institutions.
+swift_transfers,How do I make SWIFT payment?,"You need recipient SWIFT/BIC code, account details, and transfer information to initiate a SWIFT transfer."
+swift_transfers,SWIFT code meaning,A SWIFT code identifies a specific bank during international financial transactions.
+swift_transfers,SWIFT transfer charges,"SWIFT transfers may include sending, receiving, intermediary, and exchange fees."
+swift_transfers,How long do SWIFT transfers take?,SWIFT payments typically take one to five business days depending on routing.

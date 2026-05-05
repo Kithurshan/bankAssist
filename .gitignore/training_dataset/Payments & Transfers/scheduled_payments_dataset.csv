@@ -1,0 +1,6 @@
+intent,question,answer
+scheduled_payments,What is scheduled payment?,Scheduled payments allow you to set future-dated or recurring payments through your banking platform.
+scheduled_payments,How do I schedule bank payment?,"Use online or mobile banking to choose payment details, schedule date, and authorize payment."
+scheduled_payments,Can I edit scheduled payment?,Most banks allow modification or cancellation before execution.
+scheduled_payments,Scheduled payment security,Banks secure scheduled payments through authentication and confirmation systems.
+scheduled_payments,Scheduled payment fees,Charges depend on payment type and bank policy.

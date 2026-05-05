@@ -1,0 +1,6 @@
+intent,question,answer
+login_help,I can't log into my bank account,"Check credentials, password, internet connection, and account status before retrying."
+login_help,Internet banking login failed,"Verify username, password, OTP, and contact support if necessary."
+login_help,Mobile banking login issue,"Ensure app updates, correct login details, and stable connectivity."
+login_help,Account locked after failed login,Contact your bank to unlock your account securely.
+login_help,How to recover login access?,Use password reset or official customer support channels.

@@ -1,0 +1,6 @@
+intent,question,answer
+pin_reset,How do I reset my card PIN?,"You can reset your PIN through ATM services, online banking, mobile banking, or by visiting your bank branch."
+pin_reset,Forgot my debit card PIN,Use your bank’s PIN reset process or contact customer support.
+pin_reset,Can I change my ATM PIN online?,Many banks allow secure PIN changes through digital banking platforms.
+pin_reset,PIN reset at ATM,Some ATMs offer secure PIN reset or PIN change options.
+pin_reset,Blocked PIN due to failed attempts,Contact your bank to unlock or reset your PIN securely.

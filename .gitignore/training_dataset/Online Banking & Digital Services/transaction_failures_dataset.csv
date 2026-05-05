@@ -1,0 +1,6 @@
+intent,question,answer
+transaction_failures,Why did my online transaction fail?,"Transaction failures may occur due to insufficient funds, network issues, bank security checks, or technical errors."
+transaction_failures,Transfer failed but money deducted,Contact your bank immediately for transaction investigation and resolution.
+transaction_failures,Bill payment failed,"Verify account balance, payment details, and service availability."
+transaction_failures,Mobile banking payment error,"Check internet connection, recipient details, and retry securely."
+transaction_failures,ATM transaction failed,Contact your bank if funds were affected incorrectly.

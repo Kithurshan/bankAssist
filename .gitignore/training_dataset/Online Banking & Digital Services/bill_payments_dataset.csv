@@ -1,0 +1,6 @@
+intent,question,answer
+bill_payments,How do I pay bills through online banking?,"Use internet or mobile banking to select bill payments, choose biller, enter account details, and confirm payment securely."
+bill_payments,What bills can I pay online?,"Most banks support utility bills, mobile recharges, credit cards, insurance, and other approved payments."
+bill_payments,Can I schedule bill payments?,"Yes, many banks offer recurring or scheduled bill payment options."
+bill_payments,Bill payment charges,Fees vary depending on bank and payment type.
+bill_payments,Bill payment confirmation,Always verify transaction receipts or payment history after completion.

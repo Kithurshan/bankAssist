@@ -1,0 +1,6 @@
+intent,question,answer
+qr_payments,What is QR payment?,QR payment allows users to make digital payments by scanning merchant or recipient QR codes through banking apps.
+qr_payments,How do I pay using QR code?,"Open your banking app, scan the QR code, verify details, and confirm payment."
+qr_payments,Is QR payment safe?,QR payments are generally secure when using official banking apps and verified merchants.
+qr_payments,QR payment limits,Limits vary by bank and payment regulations.
+qr_payments,Can I use QR payments internationally?,Availability depends on bank support and international QR payment networks.

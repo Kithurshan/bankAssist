@@ -1,0 +1,6 @@
+intent,question,answer
+local_transfers,What is a local bank transfer?,"A local transfer is the movement of funds between accounts within the same country through bank branches, online banking, or mobile banking services."
+local_transfers,How do I transfer money locally?,"You can transfer funds using online banking, mobile banking, ATM services, or visiting your bank branch."
+local_transfers,Local transfer processing time,Local transfers may be instant or processed within banking hours depending on payment network and bank policy.
+local_transfers,Local bank transfer fees,"Fees depend on bank policy, transfer method, and recipient bank."
+local_transfers,Can I transfer money between different banks locally?,"Yes, most banks support interbank transfers through approved local payment systems."

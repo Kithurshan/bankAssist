@@ -1,0 +1,26 @@
+intent,question,answer
+minimum_balance_info,What is the minimum balance for a bank account?,"Minimum balance requirements depend on the bank and account type. Some accounts require maintaining a set balance to avoid penalties, while others may offer zero-balance options."
+minimum_balance_info,Minimum balance for savings account,"Savings account minimum balance varies by bank and account package. Basic accounts may have low or zero requirements, while premium accounts may require higher balances."
+minimum_balance_info,Minimum balance for current account,Current accounts generally require higher minimum balances than savings accounts due to added transaction and business services.
+minimum_balance_info,How much money do I need to keep in my account?,The required balance depends on your account type and bank policy. Check your bank’s terms for exact limits.
+minimum_balance_info,What happens if I don't maintain minimum balance?,"Failing to maintain the required balance may result in service charges, penalties, or account restrictions depending on bank policy."
+minimum_balance_info,Penalty for low account balance,Banks may charge monthly maintenance fees or penalties if your balance falls below the required threshold.
+minimum_balance_info,Can I open account with zero balance?,"Some banks offer zero-balance or basic accounts, subject to eligibility and service limitations."
+minimum_balance_info,Initial deposit for savings account,Initial deposit requirements vary depending on the bank and selected account type.
+minimum_balance_info,Minimum opening balance,"Banks may require an initial deposit during account opening, which differs by product."
+minimum_balance_info,Monthly average balance requirement,Certain banks require customers to maintain an average monthly balance to avoid charges.
+minimum_balance_info,Can I withdraw below minimum balance?,"Yes, but dropping below the required balance may trigger penalties or service restrictions."
+minimum_balance_info,Student account minimum balance,Student accounts often have lower or zero minimum balance requirements.
+minimum_balance_info,Senior citizen account balance requirement,Senior-focused accounts may offer reduced balance requirements depending on bank policy.
+minimum_balance_info,Business account minimum balance,Business or current accounts often require higher balances than personal accounts.
+minimum_balance_info,How to avoid minimum balance charges?,"Maintain the required balance level, choose zero-balance products, or upgrade to eligible account packages."
+minimum_balance_info,Minimum balance for joint account,Joint accounts follow the balance policies set by the chosen bank and account category.
+minimum_balance_info,Do all banks require minimum balance?,"No, some banks offer no-minimum-balance accounts, while others enforce balance rules."
+minimum_balance_info,Savings account low balance fee,Low balance fees depend on bank policy and may apply monthly or periodically.
+minimum_balance_info,Current account low balance penalty,Current accounts may incur higher penalties if required balances are not maintained.
+minimum_balance_info,Can my account be closed for low balance?,Extended low balance or inactivity may lead to account restrictions or closure under bank policy.
+minimum_balance_info,Minimum balance for online banking account,Digital banking accounts may offer lower balance requirements depending on the provider.
+minimum_balance_info,How to check minimum balance requirement?,"You can check your bank’s official account terms, branch support, or customer service for balance policies."
+minimum_balance_info,Bank balance requirements in Sri Lanka,Sri Lankan banks have varying minimum balance policies depending on account type and service tier.
+minimum_balance_info,Does fixed deposit require minimum balance?,Fixed deposits usually require a minimum deposit amount rather than an ongoing balance requirement.
+minimum_balance_info,Difference between opening deposit and minimum balance,"Opening deposit is the amount needed to start the account, while minimum balance is the required ongoing balance to maintain it."

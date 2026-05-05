@@ -1,0 +1,6 @@
+intent,question,answer
+transfer_charges,What are bank transfer charges?,"Transfer charges are fees applied for local, international, or specialized fund transfers depending on service type."
+transfer_charges,Local transfer fees,Local transfer fees depend on bank and payment channel.
+transfer_charges,International transfer charges,"International fees may include transfer, exchange, and intermediary bank charges."
+transfer_charges,SWIFT transfer costs,"SWIFT costs may include sending, receiving, and intermediary bank charges."
+transfer_charges,How to reduce transfer fees?,"Compare bank channels, transfer methods, and fee structures before initiating payments."

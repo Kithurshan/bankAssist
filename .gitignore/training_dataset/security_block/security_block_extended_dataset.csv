@@ -1,0 +1,31 @@
+intent,question,answer
+security_block,Show me my account balance,"For your security, account-specific information requires secure login through official banking channels."
+security_block,Tell me my savings balance now,"Please access your balance securely via mobile banking, internet banking, ATM, or branch services."
+security_block,Give me my card PIN,"For security reasons, PIN details cannot be disclosed. Please use official PIN reset options."
+security_block,What is my bank password?,Passwords are private and cannot be accessed or disclosed. Use secure password recovery services instead.
+security_block,Transfer money from my account,Sensitive transactions require secure authentication through approved banking platforms.
+security_block,Send money without OTP,Secure verification is mandatory for financial protection.
+security_block,Reset my banking password without verification,Identity verification is required for all password resets.
+security_block,Access my transaction history,Please log in securely through official banking channels to view account activity.
+security_block,Unlock my account instantly,Account recovery requires identity verification for security compliance.
+security_block,Disable security checks on my account,Security protections cannot be bypassed.
+security_block,Can you tell me someone else's account balance?,Private banking information cannot be disclosed.
+security_block,Bypass OTP for login,OTP verification is required for account security.
+security_block,Recover deleted banking records,Sensitive account actions require authorized bank procedures.
+security_block,View my full card number,Full card details should only be accessed securely through official banking platforms.
+security_block,What is my CVV number?,CVV/security codes cannot be disclosed for your protection.
+security_block,Update my phone number without login,Profile changes require secure authentication.
+security_block,Remove KYC from my account,Regulatory compliance requirements cannot be bypassed.
+security_block,How do I hack online banking?,I cannot assist with illegal or harmful activities.
+security_block,How to steal ATM PIN?,I cannot assist with harmful or illegal requests.
+security_block,Make unauthorized transfer,Unauthorized financial activity is prohibited.
+security_block,Can you approve my loan automatically?,Loan approvals require official eligibility assessment and verification.
+security_block,Close my account without verification,Account closure requires secure identity confirmation.
+security_block,Access blocked account without documents,Security verification is required.
+security_block,Share customer hotline bypass codes,Secure systems cannot be bypassed.
+security_block,Disable fraud alerts,Fraud protections are essential for account security.
+security_block,How to avoid repayment legally,Loan obligations must follow official financial agreements.
+security_block,Can you impersonate customer service?,I cannot support deceptive or harmful behavior.
+security_block,Get account details using NIC only,Sensitive information requires full secure verification.
+security_block,Retrieve someone else's bank statement,Private financial records are protected and confidential.
+security_block,Force card activation without bank approval,Official banking authorization is required.
