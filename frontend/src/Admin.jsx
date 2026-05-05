@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
+import API_URL from '../config';
 
 const emptyForm = {
   intent: '',
@@ -44,11 +45,11 @@ function Admin() {
 
     try {
       const urls = [
-        '/api/admin/stats',
-        '/api/knowledge-base',
-        '/api/pending-training',
-        '/api/unanswered',
-        '/api/admin/chat-history',
+        `${API_URL}/api/admin/stats`,
+        `${API_URL}/api/knowledge-base`,
+        `${API_URL}/api/pending-training`,
+        `${API_URL}/api/unanswered`,
+        `${API_URL}/api/admin/chat-history`,
       ];
 
       const responses = await Promise.all(urls.map((url) => fetch(url)));
@@ -166,7 +167,7 @@ function Admin() {
     }
 
     try {
-      const response = await fetch(`/api/delete-knowledge/${id}`, {
+      const response = await fetch(`${API_URL}/api/delete-knowledge/${id}`), {
         method: 'DELETE',
       });
       const data = await response.json();
@@ -184,7 +185,7 @@ function Admin() {
 
   const reviewTraining = async (id, action) => {
     try {
-      const response = await fetch(`/api/${action}-training/${id}`, {
+      const response = await fetch(`${API_URL}/api/${action}-training/${id}`), {
         method: 'POST',
       });
       const data = await response.json();
@@ -204,7 +205,7 @@ function Admin() {
     if (!window.confirm(`Are you sure you want to bulk ${action}?`)) return;
     setLoading(true);
     try {
-      const res = await fetch(`/api/admin/bulk-${action}`, { method: 'POST' });
+      const res = await fetch(`${API_URL}/api/admin/bulk-${action}`), { method: 'POST' });
       const data = await res.json();
       if (!res.ok) throw new Error(data.detail);
       showMessage(data.message);
@@ -229,7 +230,7 @@ function Admin() {
 
   const removeUnansweredQuestion = async (id) => {
     try {
-      const response = await fetch(`/api/delete-unanswered/${id}`, {
+      const response = await fetch(`${API_URL}/api/delete-unanswered/${id}`), {
         method: 'DELETE',
       });
       const data = await response.json();
@@ -249,7 +250,7 @@ function Admin() {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/retrain', {
+      const response = await fetch(`${API_URL}/api/retrain`), {
         method: 'POST',
       });
       const data = await response.json();
@@ -280,7 +281,7 @@ function Admin() {
     setUploadProgress(20);
 
     try {
-      const res = await fetch('/api/admin/bulk-upload', {
+      const res = await fetch(`${API_URL}/api/admin/bulk-upload`), {
         method: 'POST',
         body: formData,
       });
