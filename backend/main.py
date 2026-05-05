@@ -39,6 +39,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.post("/api/admin/login")
+
 chatbot = ChatbotEngine()
 
 # User Authentication
