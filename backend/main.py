@@ -33,13 +33,12 @@ app = FastAPI(
 
 origins = [
     "http://localhost:5173",
-    "https://bank-assist-austcu31h-skkithu2003-gmailcoms-projects.vercel.app"
+    "https://bank-assist-wine.vercel.app"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
-    allow_origins=["*"],
+    allow_origins=origins,   # ✅ ONLY THIS
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -64,9 +63,6 @@ class AdminLoginRequest(BaseModel):
     email: str
     password: str
 
-
-
-@app.post("/api/admin/login")
 
 # Registration Endpoint
 
