@@ -113,12 +113,8 @@ def admin_login(request: AdminLoginRequest, db: Session = Depends(get_db)):
     
     admin = db.query(Admin).filter(Admin.email == request.email).first()
 
-    print("ADMIN:", admin)  # 👈 add this
-
     if not admin:
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
-
-    print("HASH:", admin.password_hash)  # 👈 add this
 
     if not verify_password(request.password, admin.password_hash):
         raise HTTPException(status_code=401, detail="Invalid admin credentials")
