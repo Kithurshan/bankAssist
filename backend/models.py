@@ -16,7 +16,7 @@ class User(Base):
     chat_history = relationship("ChatHistory", back_populates="user")
 
 class Admin(Base):
-    __tablename__ = "admins"
+    __tablename__ = "admin"
 
     id = Column(Integer, primary_key=True, index=True)
     full_name = Column(String(150), nullable=False)
