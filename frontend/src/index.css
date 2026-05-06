@@ -1076,6 +1076,135 @@ textarea:disabled {
   }
 }
 
+/* =========================
+   MOBILE FIX (≤ 425px)
+========================= */
+@media (max-width: 425px) {
+
+  /* AUTH PAGE */
+  .auth-container {
+    padding: 16px;
+  }
+
+  .auth-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .auth-card h1 {
+    font-size: 24px;
+  }
+
+  .auth-subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .auth-card input {
+    min-height: 46px;
+    font-size: 14px;
+  }
+
+  .auth-card button {
+    min-height: 46px;
+    font-size: 14px;
+  }
+
+  /* SIDEBAR HEADER (TOP BAR IN MOBILE) */
+  .sidebar {
+    padding: 12px 14px;
+  }
+
+  .brand-block p {
+    font-size: 20px;
+  }
+
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .user-panel strong {
+    font-size: 14px;
+  }
+
+  /* CHAT AREA */
+  .chat-layout {
+    padding: 0 10px;
+  }
+
+  .chat-stage {
+    width: 100%;
+  }
+
+  /* START SCREEN */
+  .start-title {
+    margin-top: -20px;
+    gap: 10px;
+  }
+
+  .start-mark-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .start-title h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* INPUT BOX */
+  .composer {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .composer input {
+    font-size: 16px;
+  }
+
+  .composer button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL (≤ 375px)
+========================= */
+@media (max-width: 375px) {
+
+  .auth-card {
+    padding: 20px 14px;
+  }
+
+  .auth-card h1 {
+    font-size: 22px;
+  }
+
+  .auth-card input {
+    min-height: 44px;
+  }
+
+  .auth-card button {
+    min-height: 44px;
+  }
+
+  .brand-block p {
+    font-size: 18px;
+  }
+
+  .start-title h1 {
+    font-size: 18px;
+  }
+
+  .composer input {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 900px) {
   .app-shell {
     grid-template-columns: 1fr;
