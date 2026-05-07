@@ -121,8 +121,8 @@ function Admin() {
     }
 
     const url = editingId
-      ? `/api/update-knowledge/${editingId}`
-      : '/api/add-knowledge';
+      ? `${API_URL}/api/update-knowledge/${editingId}`
+      : `${API_URL}/api/add-knowledge`;
     const method = editingId ? 'PUT' : 'POST';
 
     setLoading(true);
