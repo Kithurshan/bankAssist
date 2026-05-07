@@ -133,7 +133,14 @@ function Admin() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
-      const data = await response.json();
+      
+      let data = {};
+      
+      try {
+        data = await response.json();
+      } catch {
+        throw new Error('Backend returned invalid response.');
+      }
 
       if (!response.ok) {
         throw new Error(data.detail || 'Save failed.');
