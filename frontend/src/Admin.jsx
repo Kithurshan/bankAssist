@@ -663,7 +663,7 @@ function Admin() {
               {item.name}
             </button>
           ))}
-          <button type="button" onClick={logoutAdmin}>
+          <button type="button" className="logout-btn" onClick={logoutAdmin}>
             <i className="ri-logout-box-r-line menu-icon" style={{ marginRight: '10px' }}></i>
             Logout
           </button>
