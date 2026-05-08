@@ -693,30 +693,6 @@ def get_training_data(db: Session = Depends(get_db)):
         TrainingData.approved == True
     ).all()
 
-
-# Retraining Endpoint
-
-@app.post("/api/retrain")
-def retrain_model():
-
-    try:
-        from retrain_model import execute_retraining
-
-        execute_retraining()
-
-        chatbot.__init__()
-
-        return {
-            "message": "Model retrained successfully"
-        }
-
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=str(e)
-        )
-
-
 # User Settings Endpoints
 
 @app.delete("/api/user/delete/{user_id}")
