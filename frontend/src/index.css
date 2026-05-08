@@ -798,7 +798,7 @@ textarea:disabled {
 }
 
 .admin-menu .logout-btn {
-  margin-top: auto;
+  margin-top: 100px;
 }
 
 .admin-menu button:last-child:hover {
