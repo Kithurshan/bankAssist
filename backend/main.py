@@ -549,8 +549,13 @@ def approve_training(pending_id: int, db: Session = Depends(get_db)):
 
     pending.reviewed = True
     db.commit()
-
-    return {"message": "Training approved successfully"}
+    
+    # Auto retrain model
+    from retrain_model import execute_retraining
+    execute_retraining()
+    chatbot.__init__()
+    
+    return {"message": "Training approved and model retrained successfully"}
 
 
 @app.post("/api/reject-training/{pending_id}")
