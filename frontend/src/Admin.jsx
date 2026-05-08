@@ -306,21 +306,88 @@ function Admin() {
           <span>Total Users</span>
           <strong>{stats.total_users}</strong>
         </div>
+  
         <div>
           <i className="ri-chat-3-line" style={{ fontSize: '24px', color: '#27b47f' }}></i>
           <span>Total Chats</span>
           <strong>{stats.total_chats}</strong>
         </div>
+  
         <div>
           <i className="ri-question-line" style={{ fontSize: '24px', color: '#ff4d6d' }}></i>
           <span>Unanswered Questions</span>
           <strong>{stats.unanswered_questions}</strong>
         </div>
+  
         <div>
           <i className="ri-time-line" style={{ fontSize: '24px', color: '#f59e0b' }}></i>
           <span>Pending Training</span>
           <strong>{stats.pending_training}</strong>
         </div>
+      </div>
+  
+      <div className="dashboard-extra-grid">
+        {/* Recent Activity */}
+        <section className="admin-card">
+          <div className="dashboard-card-header">
+            <h2>Recent Activity</h2>
+            <i className="ri-time-line dashboard-card-icon"></i>
+          </div>
+  
+          <div className="simple-list">
+            <div className="simple-item">
+              <strong>Training Approved</strong>
+              <p>New banking training data was approved.</p>
+              <small>AI model retrained automatically.</small>
+            </div>
+  
+            <div className="simple-item">
+              <strong>Knowledge Base Updated</strong>
+              <p>Admin added new banking responses.</p>
+              <small>Knowledge base synchronized successfully.</small>
+            </div>
+  
+            <div className="simple-item">
+              <strong>Bulk Upload Completed</strong>
+              <p>CSV/Excel dataset imported successfully.</p>
+              <small>Training records updated.</small>
+            </div>
+          </div>
+        </section>
+  
+        {/* Quick Actions */}
+        <section className="admin-card">
+          <div className="dashboard-card-header">
+            <h2>Quick Actions</h2>
+            <i className="ri-flashlight-line dashboard-card-icon"></i>
+          </div>
+  
+          <p>
+            Quickly manage BankAssist AI operations and administrative tasks.
+          </p>
+  
+          <div className="quick-actions-grid">
+            <button onClick={() => setActivePage('Knowledge Base')}>
+              <i className="ri-database-2-line"></i>
+              Knowledge Base
+            </button>
+  
+            <button onClick={() => setActivePage('Pending Training')}>
+              <i className="ri-time-line"></i>
+              Pending Training
+            </button>
+  
+            <button onClick={() => setActivePage('Bulk Data Upload')}>
+              <i className="ri-upload-cloud-line"></i>
+              Bulk Upload
+            </button>
+  
+            <button onClick={() => setActivePage('Chat History')}>
+              <i className="ri-history-line"></i>
+              Chat History
+            </button>
+          </div>
+        </section>
       </div>
     </>
   );
