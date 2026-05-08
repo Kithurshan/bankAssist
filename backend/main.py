@@ -649,8 +649,17 @@ def bulk_approve_training(db: Session = Depends(get_db)):
             db.add(TrainingData(question=p.question, intent=p.predicted_intent, approved=True))
         p.reviewed = True
         count += 1
+    
     db.commit()
-    return {"message": f"Approved {count} training items"}
+
+    # Auto retrain model
+    from retrain_model import execute_retraining
+    execute_retraining()
+    chatbot.__init__()
+    
+    return {
+        "message": f"Approved {count} training items and retrained model"
+    }
 
 @app.post("/api/admin/bulk-reject")
 def bulk_reject_training(db: Session = Depends(get_db)):
