@@ -253,26 +253,6 @@ function Admin() {
     }
   };
 
-  const retrainModel = async () => {
-    setLoading(true);
-
-    try {
-      const response = await fetch(`${API_URL}/api/retrain`, {
-        method: 'POST',
-      });
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.detail || 'Retrain failed.');
-      }
-
-      showMessage(data.message);
-    } catch (err) {
-      showError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const [uploadFile, setUploadFile] = useState(null);
   const [uploadProgress, setUploadProgress] = useState(0);
@@ -342,15 +322,6 @@ function Admin() {
           <strong>{stats.pending_training}</strong>
         </div>
       </div>
-
-      <section className="admin-card">
-        <h2>AI Model</h2>
-        <p>Retrain the chatbot after approving useful training data or adding new knowledge.</p>
-        <button type="button" onClick={retrainModel} disabled={loading}>
-          <i className={loading ? 'ri-refresh-line ri-spin' : 'ri-brain-line'} style={{ marginRight: '8px' }}></i>
-          {loading ? 'Retraining...' : 'Retrain AI Model'}
-        </button>
-      </section>
     </>
   );
 
